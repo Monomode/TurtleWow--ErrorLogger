@@ -1,0 +1,58 @@
+# ErrorLogger (Turtle WoW Addon)
+
+## 📌 Overview
+ErrorLogger is a lightweight Turtle WoW addon that automatically captures Lua errors from **macros and addons**, logs them to your SavedVariables, and makes them viewable in-game or after logout.
+
+This helps you debug your custom addons and macros without missing hidden errors.
+
+---
+
+## 🚀 Installation
+1. Download / copy the `ErrorLogger` folder into your WoW directory:
+World of Warcraft\Interface\AddOns\ErrorLogger
+
+yaml
+Copy code
+2. Restart the game and enable **ErrorLogger** in the AddOns menu on the character select screen.
+
+---
+
+## 🔧 Features
+- Forces script errors to be enabled (`/console scriptErrors 1`).
+- Saves every error to `SavedVariables` (`ErrorLoggerDB`).
+- Prints error messages to chat in red.
+- Command `/errors` shows the last 5 logged errors.
+
+---
+
+## 📂 Saved Data
+All logged errors are saved here:
+WTF\Account<YourAccountName>\SavedVariables\ErrorLogger.lua
+
+
+
+Each entry has a timestamp and the error message.
+
+---
+
+## 📜 Commands
+- `/errors` → Shows the last 5 logged errors in your chat frame.
+
+---
+
+## ✅ Example
+If an addon throws an error:
+Interface\AddOns\SomeAddon\file.lua:123: attempt to index a nil value
+
+
+You’ll see:
+[ErrorLogger] Interface\AddOns\SomeAddon\file.lua:123: attempt to index a nil value
+
+
+
+And it will be saved to your log file for later inspection.
+
+---
+
+## 📄 License
+Do whatever you want with this addon. Free to use, modify, and share.
