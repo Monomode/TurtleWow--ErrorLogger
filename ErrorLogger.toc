@@ -1,0 +1,6 @@
+## Interface: 11200
+## Title: ErrorLogger
+## Notes: Logs all Lua errors from macros and addons into SavedVariables
+## SavedVariables: ErrorLoggerDB
+
+ErrorLogger.lua
